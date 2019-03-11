@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "burguer": "X-Bacon",
+        "ingredients": ["bacon", "hambúrguer de carne", "queijo"]
+    },
+    {
+        "id": 2,
+        "burguer": "X-Burger",
+        "ingredients": ["hambúrguer de carne", "queijo"]
+    },
+    {
+        "id": 3,
+        "burguer": "X-Egg",
+        "ingredients": ["ovo", "hambúrguer de carne", "queijo"]
+    },
+    {
+        "id": 4,
+        "burguer": "X-Egg Bacon",
+        "ingredients": ["ovo", "bacon", "hambúrguer de carne", "queijo"]
+    }
+]
