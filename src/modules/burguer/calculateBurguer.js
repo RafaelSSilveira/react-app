@@ -11,7 +11,7 @@ class calculateBurguer {
     let promotion = this.calculePromotions(burguer, ingredients, total)
 
     total = total - promotion.discount;
-    total = total.toFixed(2)
+    total = parseFloat(total.toFixed(2))
     let promotionActive = promotion.activePromotions
 
     return {total, promotionActive}

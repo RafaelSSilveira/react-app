@@ -15,6 +15,7 @@ describe('tests duck from Burguer', () => {
         })
         const expectedTotal = price && price.reduce((a, b) => a + b, 0);
         const newTotal = calculateBurguer.calcule(sampleBurguer.ingredients, Ingredients)
+
         expect(newTotal.total).toEqual(expectedTotal)
     })
 
