@@ -2,7 +2,7 @@
 
 
 ### Build
-    $ git clone
+    $ git clone https://github.com/RafaelSSilveira/react-app.git
     $ npm install
 
 ### Run

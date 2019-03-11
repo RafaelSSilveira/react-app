@@ -46,7 +46,9 @@ class Burguer extends Component {
             this.setState({ clientBurguer: this.props.selectedBurguer });
         }
 
-        if (this.props.newBurguer === true && this.state.value !== "0.00") {
+
+
+        if (this.props.newBurguer === true && this.state.clientBurguer.burguer !== 'NewBurguer') {
             let initialState = {
                 clientBurguer: {
                     burguer: 'NewBurguer',

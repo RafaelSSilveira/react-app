@@ -4,22 +4,15 @@ export default class Card extends Component {
     render() {
         return (
             <div className="card text-center col-md-3 col-sm-12">
-                <div className="card-header">
-                    {this.props.burguerCard ? this.props.burguerCard.burguer : "Monte seu propio Hamburguer"}
-                </div>
-                <div className="card-body">
-                    <ul>
-                        {
-                            this.props.burguerCard &&  this.props.burguerCard.ingredients.map((el) => {
-                                return (
-                                    <li key={el} id={el}>
-                                        {el}
-                                    </li>
-                                )
-                            })
-                        }
-                        {!this.props.burguerCard && <li>Escolha suas opções!</li>}
-                    </ul>
+                <div className="card-body ">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col align-self-center">
+                            <img alt="icon" src={require('../../assets/img/' + (this.props.burguerCard ? this.props.burguerCard.img : 'hamburger.png'))} />
+                            <h2>{this.props.burguerCard ? this.props.burguerCard.burguer : "Monte Seu Burguer"} </h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <button
                     type="button"
